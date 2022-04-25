@@ -25,7 +25,7 @@ The application allows for finding:
      "http://localhost:8800/api/flights?flightNumber=6080&date=2019-07-21T03:04:44"
 
 2. For requested Airport IATA code and date in the form "yyyy-MM-ddTHH:mm:ss", so e.g. "2019-07-21T03:04:44":
-  * Number of Arrivals to the airport
+  * Number of arrivals to the airport
   * Number of departures from the airport
   * Number of baggage pieces arriving to the airport
   * Number of baggage pieces departing from the airport
