@@ -1,0 +1,14 @@
+{
+  "name": "flights_js",
+  "version": "1.0.0",
+  "description": "Flights application",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server -p 8883 -c-1"
+  },
+  "devDependencies": {
+    "http-server": "0.12.3"
+  },
+  "keywords": ["Flights"],
+  "author": "Aleksandra Rumińska"
+}

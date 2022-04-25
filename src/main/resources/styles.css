@@ -1,0 +1,163 @@
+body {
+    font-family: Georgia serif;
+    background: linear-gradient(270deg, #b7eaff 0%,#94dfff 100%);
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    width: 1000px;
+}
+
+.top{
+    background-color: #2a2a72;
+    background-image: linear-gradient(0deg, #2a2a72 10%, #FFFFFF 100%);
+    left: initial;
+    right: initial;
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+.navigation-bar {
+    background-color: #2a2a72;
+}
+
+.navigation-bar li {
+    display: inline-block;
+}
+
+.navigation-bar a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.navigation-bar a:hover {
+    background-color: #009ffd;
+    color: #FFF;
+}
+
+.flight_form{
+    text-align: center;
+    vertical-align: center;
+}
+
+.answers {
+    display: none;
+}
+
+.text--italic {
+    font-style: italic;
+}
+
+.text--bold {
+    font-weight: bold;
+}
+
+.input {
+    width: 200px;
+    height: 20px;
+    margin: 5px;
+}
+
+.table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button{
+    width: 300px;
+    height: 30px;
+    background-color: #2a2a72;
+    padding: 5px 10px;
+    color: #FFF;
+    font-weight: bold;
+    font-family: Georgia serif;
+
+}
+
+.button:hover{
+    background-color: #009ffd;
+
+}
+
+.footer{
+    bottom: 0;
+    position: fixed;
+    left:0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    color: #FFFFFF;
+    background-color: #2a2a72;
+
+}
+
+.image{
+    content: url("baggage.png");
+    max-height: 10%;
+    max-width: 10%;
+    position: fixed;
+    bottom: 6%;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#image3{
+    right: -15%;
+    animation-delay: 6s;
+}
+
+#image1{
+    right: -10%;
+}
+
+#image2{
+    animation-delay: 3s;
+    right: -10%;
+
+}
+
+.plane{
+    content: url("plane.png");
+    max-height: 20%;
+    max-width: 10%;
+    position: fixed;
+    left: 10%;
+    animation-name: takeOff;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes takeOff {
+    0%   {left:-10%; bottom: 10%}
+    100% {left:110%; bottom: 90%}
+}
+
+
+@keyframes move {
+    0%   {right:-10%;}
+    25%  {right:25%;}
+    50%  {right:50%;}
+    75%  {right:75%;}
+    100% {right:110%;}
+}
+
+.info-section{
+    padding: 10px;
+    background-color: #DEEBF4;
+}

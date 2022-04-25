@@ -1,0 +1,7 @@
+GET http://localhost:8800/api/flights?flightNumber=6080&date=2019-07-21T03:04:44
+
+####
+
+GET http://localhost:8800/api/flights/KRK?date=2019-07-21T03:04:44
+
+####

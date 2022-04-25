@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Flights data application"/>
+    <meta name="keywords" content="Flights Data"/>
+    <meta name="author" content="Aleksandra Rumińska"/>
+    <title>Flights Data</title>
+    <link rel="stylesheet" href="../../styles.css"/>
+    <script src="../../script.js" defer="defer"></script>
+    <script type="module" src="flights_view.js" defer="defer"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <header class="header">
+            <h1>Flights Info</h1>
+        </header>
+
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="../../index.html">main</a></li>
+                <li><a href="flights_view.html">flights</a></li>
+                <li><a href="../airport_view/airport_view.html">airports</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="main-section">
+        <div class="flight_form">
+         <header><h2>Find data about a flight</h2></header>
+            <form id="infoForm" >
+                <table class="table">
+                    <tr>
+                        <td>
+                            <label class="form" for="flightNumber">Flight Number: </label>
+                        </td>
+                        <td>
+                            <input class ="input" id="flightNumber" name="flightNumber" />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="form" for="date">Date: </label>
+                        </td>
+                        <td>
+                            <input class ="input" id="date" name="date"/>
+
+                        </td>
+                    </tr>
+                </table>
+                <script>
+                    function myFunction() {
+                        let x = document.getElementById("answers");
+                        if (x.style.display === "block") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "block";
+                        }
+                    }
+                </script>
+                <br/>
+                <button class="button" type="submit" onclick="myFunction()">Find</button>
+            </form>
+        </div>
+        <div class="flight_form">
+            <section id="answers" class="answers">
+                <h3>Details</h3>
+                <div>
+                    <label for="cargo">Cargo: </label><span id="cargo">totalCargoWeight</span>
+                    <br/>
+                    <br/>
+                    <label for="baggage">Baggage: </label><span id="baggage">totalBaggageWeight</span>
+                    <br/>
+                    <br/>
+                    <label for="total">Total: </label><span id="total">totalWeight</span>
+                </div>
+            </section>
+        </div>
+        <div class="image" id="image1"></div>
+        <div class="image" id="image2"></div>
+        <div class="image" id="image3"></div>
+
+    </section>
+    <footer class="footer">
+        <p>Aleksandra Rumińska, 2022</p>
+    </footer>
+</div>
+</body>
+</html>
