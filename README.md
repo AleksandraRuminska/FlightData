@@ -16,8 +16,25 @@ The application allows for finding:
   * Total Weight of Cargo
   * Total Weight of Baggage
   * Total Weight Overall
+  
+   On the webpage go to the subpage flights and write the parameters in a given fields, then click button "Find".
+   If you want to access the data on the backend or in e.g. Postman, use:
+   e.g. flightNumber = 6080
+        date = 2019-07-21T03:04:44
+        
+     "http://localhost:8800/api/flights?flightNumber=6080&date=2019-07-21T03:04:44"
+
 2. For requested Airport IATA code and date in the form "yyyy-MM-ddTHH:mm:ss", so e.g. "2019-07-21T03:04:44":
   * Number of Arrivals to the airport
   * Number of departures from the airport
   * Number of baggage pieces arriving to the airport
   * Number of baggage pieces departing from the airport
+  
+   On the webpage go to the subpage airports and write the parameters in a given fields, then click button "Find".
+   If you want to access the data on the backend or in e.g. Postman, use:
+   e.g. airportCode = KRK
+        date = 2019-07-21T03:04:44
+        
+     "http://localhost:8800/api/flights/KRK?date=2019-07-21T03:04:44"
+
+ 
